@@ -1,3 +1,16 @@
 .idea
 *~
 mqlcache.dat
+
+.knitpkg/
+knitpkg/autocomplete/
+knitpkg/flat/
+
+*.mqproj
+
+bin/
+target/
+
+**/*.ex5
+**/*.ex4
+**/*.log

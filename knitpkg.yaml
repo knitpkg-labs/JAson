@@ -1,0 +1,16 @@
+target: mql5
+type: package
+
+organization: vivazzi
+name: jason
+version: 1.0.0
+version_description: forked from vivazzi/JAson
+
+# Search fields
+description: JSON Serialization and Deserialization in MQL
+keywords: [ "json", "serialization" ]
+author: Alexey Sergeev, Artem Maltsev and contributors
+license: MIT
+
+compile:
+- tests/TestJAson.mq5

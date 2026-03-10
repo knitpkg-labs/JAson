@@ -5,16 +5,36 @@ You can create JSON object with data of different types and run serialization an
 
 This repo is fork of **JAson** (https://www.mql5.com/en/code/13663) with improvements, refactoring code, unit tests and translating of comments to English.
 
-## Installing
+## Installation instructions
+
+### OPTION A: Via KnitPkg (recommended)
+
+#### Prerequisites
+
+To use `JAson` in your KnitPkg project, you will need:
+
+1.  [**MetaTrader 5**](https://www.mql5.com/) installed.
+2.  [**KnitPkg CLI**](https://knitpkg.dev): The KnitPkg package manager for MetaTrader. If you don't have it, you can install it by following the instructions in the [KnitPkg documentation](https://docs.knitpkg.dev/installation/).
+
+#### Installing as a dependency
+
+Execute the following command in your project directory:
+
+```bash
+kp add @vivazzi/jason
+kp install
+```
+
+### OPTION B: Manual installation
 
 Download repo and copy `JAson/Include/JAson.mqh` folder to `<TERMINAL DIR>/MQL(4/5)/Include`
 
 ## Usage
 
-Add `#include <JAson.mqh>` and create `CJAVal` object to work with JSON data. See simple example for easy understand:
+Add `#include` pointing to the JAson header and create `CJAVal` object to work with JSON data. See simple example for easy understand:
 
 ```mql4
-#include <JAson.mqh>
+#include "../knitpkg/include/vivazzi/JAson/JAson.mqh"
 
 int OnInit(){
     CJAVal data;
@@ -109,7 +129,7 @@ data["b"].Add("muz");
 JAson provides the serialization and deserialization:
 
 ```mql4
-#include <JAson.mqh>
+#include "../knitpkg/include/vivazzi/JAson/JAson.mqh"
 
 int OnInit(){
     string data_str;
@@ -143,7 +163,7 @@ It can be useful for data saving in a file or send Json object by POST request.
 POST request with Json object:
 
 ```mql4
-#include <JAson.mqh>
+#include "../knitpkg/include/vivazzi/JAson/JAson.mqh"
 #include <requests/requests.mqh>  // https://github.com/vivazzi/mql_requests
 
 int OnInit(){
@@ -182,7 +202,7 @@ In this example it has been used: [mql_requests](https://github.com/vivazzi/mql_
 To clear `CJAVal` object, use method `Clear()`:
 
 ```mql4
-#include <JAson.mqh>
+#include "../knitpkg/include/vivazzi/JAson/JAson.mqh"
 
 int OnInit(){
     CJAVal data;
@@ -255,7 +275,7 @@ Print(data["e"].type);  // jtUNDEF
 So you can compare key type with `jtUNDEF`, if you want to check for the existence of a key:
 
 ```mql4
-#include <JAson.mqh>
+#include "../knitpkg/include/vivazzi/JAson/JAson.mqh"
 
 int OnInit(){
     CJAVal data;
