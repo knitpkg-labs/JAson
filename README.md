@@ -27,7 +27,7 @@ kp install
 
 ### OPTION B: Manual installation
 
-Download repo and copy `JAson/Include/JAson.mqh` folder to `<TERMINAL DIR>/MQL(4/5)/Include`
+Download repo and copy `knitpkg/include/vivazzi/JAson/JAson.mqh` header to `<TERMINAL DIR>/MQL(4/5)/Include/JAson/`
 
 ## Usage
 
