@@ -1,4 +1,6 @@
-#property copyright "Copyright © 2019-2021 Artem Maltsev (Vivazzi)"
+#include "../knitpkg/build/BuildInfo.mqh"
+
+#property copyright "Copyright © 2019-2021 " + MANIFEST_AUTHOR
 #property link      "https://vivazzi.pro"
 #property description   "Tests for JAson"
 #property strict

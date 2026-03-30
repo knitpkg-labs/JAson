@@ -3,8 +3,8 @@ type: package
 
 organization: knitpkg-labs
 name: jason
-version: 1.0.1
-version_description: Header path fix to the forked organization name
+version: 1.0.2
+version_description: Bug fix - removed buildinfo constants from package header
 
 # Search fields
 description: JSON Serialization and Deserialization in MQL, forked from https://github.com/vivazzi/JAson
@@ -18,8 +18,6 @@ defines:
     MANIFEST_ORG: organization
     MANIFEST_AUTHOR: author
     MANIFEST_DESCRIPTION: description  
-  extra:
-    ORIGINAL_VERSION: 1.13.0
 
 compile:
 - tests/TestJAson.mq5

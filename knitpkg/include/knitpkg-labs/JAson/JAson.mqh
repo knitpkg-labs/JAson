@@ -1,7 +1,5 @@
-#include "../../../build/BuildInfo.mqh"
-
-#property copyright "Copyright © 2006-2017, "+ MANIFEST_AUTHORS +": https://github.com/vivazzi/JAson/blob/main/CONTRIBUTORS.md"
-#property version ORIGINAL_VERSION
+#property copyright "Copyright © 2006-2017, Alexey Sergeev, Artem Maltsev and contributors: https://github.com/vivazzi/JAson/blob/main/CONTRIBUTORS.md"
+#property version "1.13.0"
 #property description "jsonON Serialization and Deserialization"
 #property strict
 
