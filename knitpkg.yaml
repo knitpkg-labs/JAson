@@ -3,8 +3,8 @@ type: package
 
 organization: knitpkg-labs
 name: jason
-version: 1.0.0
-version_description: forked from https://github.com/vivazzi/JAson
+version: 1.0.1
+version_description: Header path fix to the forked organization name
 
 # Search fields
 description: JSON Serialization and Deserialization in MQL, forked from https://github.com/vivazzi/JAson
