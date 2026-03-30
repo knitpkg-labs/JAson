@@ -1,10 +1,12 @@
-#property copyright "Copyright © 2006-2017, Alexey Sergeev, Artem Maltsev and contributors: https://github.com/vivazzi/JAson/blob/main/CONTRIBUTORS.md"
-#property version "1.13.0"
+#include "../../../build/BuildInfo.mqh"
+
+#property copyright "Copyright © 2006-2017, "+ MANIFEST_AUTHORS +": https://github.com/vivazzi/JAson/blob/main/CONTRIBUTORS.md"
+#property version ORIGINAL_VERSION
 #property description "jsonON Serialization and Deserialization"
 #property strict
 
 
-#ifdef DEBUG
+#ifdef JASON_DEBUG
     #define DEBUG_PRINT_KEY() Print(key+" "+string(__LINE__))
 #else
     #define DEBUG_PRINT_KEY()

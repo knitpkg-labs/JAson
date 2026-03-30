@@ -1,16 +1,25 @@
 target: mql5
 type: package
 
-organization: vivazzi
+organization: knitpkg-labs
 name: jason
 version: 1.0.0
-version_description: forked from vivazzi/JAson
+version_description: forked from https://github.com/vivazzi/JAson
 
 # Search fields
-description: JSON Serialization and Deserialization in MQL
+description: JSON Serialization and Deserialization in MQL, forked from https://github.com/vivazzi/JAson
 keywords: [ "json", "serialization" ]
 author: Alexey Sergeev, Artem Maltsev and contributors
 license: MIT
+
+defines:
+  from_manifest:
+    MANIFEST_VERSION: version
+    MANIFEST_ORG: organization
+    MANIFEST_AUTHOR: author
+    MANIFEST_DESCRIPTION: description  
+  extra:
+    ORIGINAL_VERSION: 1.13.0
 
 compile:
 - tests/TestJAson.mq5

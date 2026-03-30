@@ -3,7 +3,7 @@
 Realization of JSON protocol in mql4 / mql5. 
 You can create JSON object with data of different types and run serialization and deserialization of JSON data.
 
-This repo is fork of **JAson** (https://www.mql5.com/en/code/13663) with improvements, refactoring code, unit tests and translating of comments to English.
+This repo is forked from [JAson](https://github.com/vivazzi/JAson) adapted to the KnitPkg packaging ecosystem.
 
 ## Installation instructions
 
@@ -21,9 +21,30 @@ To use `JAson` in your KnitPkg project, you will need:
 Execute the following command in your project directory:
 
 ```bash
-kp add @vivazzi/jason
+kp add @knitpkg-labs/jason
 kp install
 ```
+
+#### Running Unit tests with KnitPkg
+
+To run unit tests for `JAson` using KnitPkg, follow these steps:
+
+1. Download the project
+
+```bash
+kp get mql5 @knitpkg-labs/jason
+```
+
+2. Compile the Unit test
+```bash
+kp compile
+# or add JASON_DEBUG build-time constant to log console debug messages
+kp compile -D JASON_DEBUG
+```
+
+3. Open Metatrader and refresh the Navigator window
+4. Run the TestJAson script under Scripts/JAson/bin/TestJAson
+5. Check the results in output file MQL5/Files/TestJAson_unit_test_log.txt
 
 ### OPTION B: Manual installation
 

@@ -5,6 +5,7 @@ mqlcache.dat
 .knitpkg/
 knitpkg/autocomplete/
 knitpkg/flat/
+knitpkg/build/
 
 *.mqproj
 
